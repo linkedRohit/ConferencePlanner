@@ -26,8 +26,8 @@ How to run this application :
 Since it is built using nodejs, please install npm on the system.
 1. git clone https://github.com/linkedRohit/ConferencePlanner.git or unzip the Conference Planner.zip file
 2. cd ConferencePlanner
-3. Run <npm install>
-4. Run <npm start>
+3. Run npm install
+4. Run npm start
 5. Open http://localhost:3000 and follow the urls (in blue color)
 
 Along with the browser, it also prints output to the console so any ways the resultant schedule will be returned back.
