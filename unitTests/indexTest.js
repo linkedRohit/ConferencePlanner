@@ -1,8 +1,20 @@
-var expect   = require("chai").expect;
-describe("ClassName", function(){
-    describe("MethodName", function() {
-        it("Description of the case we are testing", function () {
-            expect(true).equal(true);
-        }); 
-    });
+var request = require("supertest").expect;
+describe("loading the application", function(){
+    var server;
+  beforeEach(function () {
+    server = require('./server');
+  });
+  afterEach(function () {
+    server.close();
+  });
+  it('responds to /', function testSlash(done) {
+  request(server)
+    .get('/')
+    .expect(200, done);
+  });
+  it('404 everything else', function testPath(done) {
+    request(server)
+      .get('/foo/bar')
+      .expect(404, done);
+  });
 });
