@@ -18,7 +18,8 @@ I am assuming that the talk list only consists of talks for the scheduling and n
 Also, I have validated the invalid timings and invalid descriptions of the talks.
 I am assuming that the file with input data will be session.txt placed in root of the project.
 To check for different test data, please change the requirements in session.txt.
-
+To check the code, entry point is routes/index.js and then the function calls to services for application level logic.
+You can also change the conference start time or end time along with the number of days in the event in config.js file in root of the project folder.
 
 How to run this application :
 
